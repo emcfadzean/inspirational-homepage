@@ -44,4 +44,17 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
 # inspirational-homepage
+
+Codecademy portfolio project to apply concepts learnt in React and Redux modules.
+
+## Upcoming features
+
+- Users can check the current weather
+- Users are shown an inspirational image
+- Users can cycle through multiple fetched images
+- Users are shown an inspirational quote
+- Users can write down their goals
+- Users can delete goals
+- Users can mark goals as complete
