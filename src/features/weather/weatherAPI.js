@@ -49,7 +49,11 @@ const sample_output = {
 };
 
 export function fetchWeather() {
-  //return fetch(query+ api_key).then(res => res.json()).then(json => json);
   console.log("Request:", query + api_key);
-  console.log(sample_output);
+  return fetch(query + api_key);
+
+  // console.log(sample_output);
+  // new Promise((resolve) =>
+  //   setTimeout(() => resolve({ data: sample_output }), 500)
+  // );
 }

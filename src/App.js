@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
-import { Weather } from "./features/counter/weather/Weather";
+import { Weather } from "./features/weather/Weather";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
