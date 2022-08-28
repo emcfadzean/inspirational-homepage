@@ -1,6 +1,6 @@
 body {
   margin: auto;
-  width: 500px;
+  max-width: 500px;
 }
 .card {
   margin: 1rem;

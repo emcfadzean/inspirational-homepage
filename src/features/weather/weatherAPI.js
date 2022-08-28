@@ -49,7 +49,6 @@ const sample_output = {
 };
 
 export function fetchWeather() {
-  console.log("Request:", query + api_key);
   return fetch(query + api_key);
 
   // console.log(sample_output);
