@@ -1,7 +1,13 @@
 body {
   margin: auto;
-  max-width: 500px;
+  max-width: 800px;
+  min-width: 300px;
 }
 .card {
   margin: 1rem;
+}
+
+.btn-sm {
+  max-height: 2rem;
+  margin-left: 0.5rem;
 }

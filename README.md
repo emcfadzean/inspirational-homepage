@@ -51,13 +51,14 @@ Codecademy portfolio project to apply concepts learnt in React and Redux modules
 
 ## Upcoming features
 
-- Users can cycle through multiple fetched images
-- Users are shown an inspirational quote
-- Users can write down their goals
-- Users can delete goals
-- Users can mark goals as complete
+- Add redux to goals feature
 
 ## Completed features
 
 - Users can check the current weather
 - Users are shown an inspirational image
+- Users can cycle through multiple fetched images
+- Users are shown an inspirational quote
+- Users can write down their goals
+- Users can delete goals
+- Users can mark goals as complete
