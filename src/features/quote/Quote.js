@@ -12,17 +12,9 @@ export function Quote(props) {
   }, []);
 
   return (
-    <>
-      <Card>
-        <Card.Header>{quote.title}</Card.Header>
-        <Card.Body>
-          <q>{quote.quote}.</q>
-          <p>- {quote.author}</p>
-          <div>
-            <img src={quote.background} height="200px" />
-          </div>
-        </Card.Body>
-      </Card>
-    </>
+    <div style={{ textAlign: "center", paddingTop: 50 }}>
+      <q>{quote.quote}</q>
+      <p>- {quote.author}</p>
+    </div>
   );
 }

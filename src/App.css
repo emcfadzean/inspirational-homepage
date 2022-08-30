@@ -1,7 +1,7 @@
 body {
   margin: auto;
-  max-width: 800px;
-  min-width: 300px;
+  width: 800px;
+  border: solid #eeeeee 1px;
 }
 .card {
   margin: 1rem;
@@ -10,4 +10,12 @@ body {
 .btn-sm {
   max-height: 2rem;
   margin-left: 0.5rem;
+}
+
+.text-muted {
+  font-size: small;
+}
+
+q {
+  font-style: italic;
 }

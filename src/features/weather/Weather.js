@@ -17,23 +17,28 @@ export function Weather(props) {
 
   return (
     <>
-      <Card>
-        <Card.Header>Weather</Card.Header>
-        <Card.Body>
-          {Object.keys(weather).length !== 0 ? (
-            <>
+      <Card
+        className="text-muted"
+        style={{ position: "absolute", top: 25, right: 295 }}
+      >
+        {Object.keys(weather).length !== 0 ? (
+          <>
+            <p style={{ padding: "10px 10px 0px 10px", margin: 0 }}>
               <img
+                style={{ position: "absolute", top: -18, right: -20 }}
                 src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}
+                width="40px"
+                height="40px"
               />
-              <p>
-                {weather.temp} &#8451;, {weather.city}
-              </p>
-              <p>{weather.description}</p>
-            </>
-          ) : (
-            <p>Oops... something went wrong :/</p>
-          )}
-        </Card.Body>
+              {weather.temp} &#8451;, {weather.city}
+            </p>
+            <p style={{ padding: "0px 10px 10px 10px", margin: 0 }}>
+              {weather.description}
+            </p>
+          </>
+        ) : (
+          <p>Oops... something went wrong :/</p>
+        )}
       </Card>
     </>
   );

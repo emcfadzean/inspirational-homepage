@@ -10,10 +10,10 @@ import { Goals } from "./features/goals/Goals";
 function App() {
   return (
     <div className="App">
-      <Goals />
-      <Weather />
       <CarouselList />
       <Quote />
+      <Goals />
+      <Weather />
     </div>
   );
 }
