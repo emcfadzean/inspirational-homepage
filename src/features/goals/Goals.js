@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Card, Form, Button, Alert } from "react-bootstrap";
+import { Card, Form, Button } from "react-bootstrap";
 import { Goal } from "./Goal";
 import { v4 as uuidv4 } from "uuid";
 import { useDispatch, useSelector } from "react-redux";
-import { addGoal, selectGoals } from "./goalsSlice";
-
+import { addGoal, removeGoal, selectGoals, updateGoal } from "./goalsSlice";
 export function Goals() {
   const [goal, setGoal] = useState("");
-  const [goals, setGoals] = useState([]);
   const dispatch = useDispatch();
-  // const goals = useSelector(selectGoals);
+  const goals = useSelector(selectGoals);
 
+  useEffect(() => {}, [goals]);
   const handleChange = (e) => {
     e.preventDefault();
     setGoal(e.target.value);
@@ -18,23 +17,21 @@ export function Goals() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setGoals([{ id: uuidv4(), complete: false, goal: goal }, ...goals]);
+    if (!goal) {
+      return;
+    }
     dispatch(addGoal({ id: uuidv4(), complete: false, goal: goal }));
     setGoal("");
   };
 
   const handleRemove = (e) => {
     const currentId = e.currentTarget.parentNode.id;
-    setGoals(goals.filter((goal) => goal.id !== currentId));
+    dispatch(removeGoal({ id: currentId }));
   };
 
   const toggleComplete = (e) => {
     const currentId = e.currentTarget.parentNode.id;
-    const currentGoal = goals.filter((goal) => goal.id === currentId)[0];
-    setGoals([
-      { ...currentGoal, complete: !currentGoal.complete },
-      ...goals.filter((goal) => goal.id !== currentId),
-    ]);
+    dispatch(updateGoal({ id: currentId }));
   };
 
   return (

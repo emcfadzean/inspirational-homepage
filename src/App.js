@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="App">
       <Goals />
-      <Weather />
+      {/* <Weather />
       <CarouselList />
-      <Quote />
+      <Quote /> */}
     </div>
   );
 }

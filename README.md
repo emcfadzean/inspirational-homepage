@@ -52,6 +52,7 @@ Codecademy portfolio project to apply concepts learnt in React and Redux modules
 ## Upcoming features
 
 - Add redux to goals feature
+- Make pretty
 
 ## Completed features
 
