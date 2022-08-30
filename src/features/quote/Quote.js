@@ -12,7 +12,7 @@ export function Quote(props) {
   }, []);
 
   return (
-    <div style={{ textAlign: "center", paddingTop: 50 }}>
+    <div style={{ textAlign: "center", paddingTop: 0 }}>
       <q>{quote.quote}</q>
       <p>- {quote.author}</p>
     </div>

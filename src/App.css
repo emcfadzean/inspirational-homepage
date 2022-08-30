@@ -1,7 +1,13 @@
+html {
+  min-height: 1000px;
+  height: 100%;
+}
+
 body {
   margin: auto;
   width: 800px;
   border: solid #eeeeee 1px;
+  height: 100%;
 }
 .card {
   margin: 1rem;

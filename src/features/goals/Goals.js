@@ -35,7 +35,7 @@ export function Goals() {
   };
 
   return (
-    <Card style={{ position: "relative", top: -475, right: -140, width: 500 }}>
+    <Card style={{ position: "relative", top: -525, right: -140, width: 500 }}>
       <Card.Header>Goals</Card.Header>
       <Card.Body>
         <Form className="mb-3" onSubmit={handleSubmit}>

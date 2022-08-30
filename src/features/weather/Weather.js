@@ -19,7 +19,7 @@ export function Weather(props) {
     <>
       <Card
         className="text-muted"
-        style={{ position: "absolute", top: 25, right: 295 }}
+        style={{ position: "relative", top: -500, right: 0, width: 200 }}
       >
         {Object.keys(weather).length !== 0 ? (
           <>
