@@ -51,7 +51,6 @@ Codecademy portfolio project to apply concepts learnt in React and Redux modules
 
 ## Upcoming features
 
-- Add redux to goals feature
 - Make pretty
 
 ## Completed features
@@ -63,3 +62,4 @@ Codecademy portfolio project to apply concepts learnt in React and Redux modules
 - Users can write down their goals
 - Users can delete goals
 - Users can mark goals as complete
+- Add redux to goals feature
