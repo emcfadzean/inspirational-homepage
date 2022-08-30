@@ -49,8 +49,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Codecademy portfolio project to apply concepts learnt in React and Redux modules.
 
-## Upcoming features
-
 ## Completed features
 
 - Users can check the current weather
