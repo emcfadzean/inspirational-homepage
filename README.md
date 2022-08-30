@@ -51,8 +51,6 @@ Codecademy portfolio project to apply concepts learnt in React and Redux modules
 
 ## Upcoming features
 
-- Make mobile friendly
-
 ## Completed features
 
 - Users can check the current weather
@@ -64,3 +62,4 @@ Codecademy portfolio project to apply concepts learnt in React and Redux modules
 - Users can mark goals as complete
 - Add redux to goals feature
 - Make pretty
+- Make mobile friendlish
