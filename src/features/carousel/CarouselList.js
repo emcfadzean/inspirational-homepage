@@ -33,7 +33,7 @@ export function CarouselList() {
             key={image.id}
           >
             <Carousel.Caption
-              className="d-flex align-items-center"
+              className="d-flex align-items-center justify-content-center"
               style={{ height: 500, paddingBottom: 0 }}
             >
               <Quote />
