@@ -9,7 +9,7 @@ export function Goal({ id, goal, complete, onRemove, toggleComplete }) {
 
   return (
     <Alert id={id} className="d-flex" variant={alertVariant}>
-      <p className="mb-0 col-10">{goal}</p>
+      <p className="mb-0 col-9 col-sm-10">{goal}</p>
       <Button
         variant={"outline-" + alertVariant}
         className="remove-goal btn-sm"
