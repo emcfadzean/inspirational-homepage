@@ -1,12 +1,5 @@
-html {
-  min-height: 1000px;
-  height: 100%;
-}
-
 body {
   margin: auto;
-  width: 800px;
-  border: solid #eeeeee 1px;
   height: 100%;
 }
 .card {
@@ -24,4 +17,6 @@ body {
 
 q {
   font-style: italic;
+  font-weight: bold;
+  font-size: x-large;
 }

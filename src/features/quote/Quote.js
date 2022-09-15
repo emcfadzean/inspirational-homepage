@@ -12,9 +12,22 @@ export function Quote(props) {
   }, []);
 
   return (
-    <div style={{ textAlign: "center", paddingTop: 0 }}>
-      <q>{quote.quote}</q>
-      <p>- {quote.author}</p>
+    <div
+      style={{
+        textAlign: "center",
+        paddingTop: 0,
+        color: "white",
+        backgroundColor: "transparent",
+      }}
+    >
+      <q>
+        {quote.quote
+          ? quote.quote
+          : "'Genius is one percent inspiration and 99 percent perspiration'"}
+      </q>
+      <p style={{ margin: 0, fontStyle: "italic" }}>
+        - {quote.author ? quote.author : "Thomas Edison"}
+      </p>
     </div>
   );
 }

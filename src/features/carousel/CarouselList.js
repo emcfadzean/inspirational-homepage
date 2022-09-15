@@ -4,6 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAsync, selectCarousel } from "./carouselSlice";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Quote } from "../quote/Quote";
 
 export function CarouselList() {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ export function CarouselList() {
 
   return (
     <Carousel
-      style={{ zIndex: 0 }}
+      style={{ zIndex: 0, minHeight: "50vh" }}
       variant="dark"
       slide={false}
       interval={null}
@@ -25,10 +26,25 @@ export function CarouselList() {
       {Object.values(images)?.map((image) => {
         return (
           <Carousel.Item
-            style={{ height: 500, backgroundColor: "black" }}
+            style={{
+              height: 500,
+              backgroundColor: "transparent",
+            }}
             key={image.id}
           >
-            <img style={{ objectFit: "fill" }} src={image.urls.regular} />
+            <Carousel.Caption
+              className="d-flex align-items-center"
+              style={{ height: 500, paddingBottom: 0 }}
+            >
+              <Quote />
+            </Carousel.Caption>
+
+            <img
+              width="100%"
+              height="500px"
+              style={{ objectFit: "cover" }}
+              src={image.urls.regular}
+            />
           </Carousel.Item>
         );
       })}

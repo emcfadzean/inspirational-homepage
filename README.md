@@ -60,4 +60,4 @@ Codecademy portfolio project to apply concepts learnt in React and Redux modules
 - Users can mark goals as complete
 - Add redux to goals feature
 - Make pretty
-- Make mobile friendlish
+- Make mobile friendly

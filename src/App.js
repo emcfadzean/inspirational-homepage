@@ -12,7 +12,6 @@ function App() {
     <div className="App">
       <CarouselList />
       <Weather />
-      <Quote />
       <Goals />
     </div>
   );
